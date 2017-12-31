@@ -5,4 +5,5 @@ RUN npm install -g jshint
 RUN mkdir /code
 WORKDIR /code
 
-CMD jshint .
+ENTRYPOINT ["jshint"]
+CMD ["."]
